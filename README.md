@@ -1,4 +1,4 @@
-# CMD (Connect My Doc) - Patient Module
+# CMD (Connect My Doc) - Patient API Module 
 
 ## Table of Contents
 

@@ -8,8 +8,6 @@
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Database](#database)
-- [Deployment](#deployment)
-- [Contributing](#contributing)
 - [Branching Strategy](#branching-strategy)
 - [License](#license)
 - [Contact](#contact)
@@ -89,15 +87,7 @@ The project uses Entity Framework Core with SQL Server. The database schema is m
     ```bash
     dotnet ef database update
     ```
-
-## Deployment
-
-For deployment instructions, please refer to `DEPLOYMENT.md`.
-
-## Contributing
-
-We welcome contributions to the CMD Patient Module. Please read `CONTRIBUTING.md` for details on our code of conduct and the process for submitting pull requests.
-
+    
 ## Branching Strategy
 
 We use a feature branch workflow. Here are the main commands for working with branches:

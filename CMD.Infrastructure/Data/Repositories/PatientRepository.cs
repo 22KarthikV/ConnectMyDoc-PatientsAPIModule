@@ -27,24 +27,7 @@ namespace CMD.Infrastructure.Data.Repositories
 
         public async Task<Patient> UpdateAsync(Patient patient)
         {
-            /*_context.Entry(patient).State = EntityState.Modified;
-            if (patient.Address != null)
-            {
-                _context.Entry(patient.Address).State = patient.Address.PatientAddressId == 0 ?
-                    EntityState.Added : EntityState.Modified;
-            }
-            if (patient.HealthConditions != null)
-            {
-                foreach (var condition in patient.HealthConditions)
-                {
-                    _context.Entry(condition).State = condition.HealthConditionId == 0 ?
-                        EntityState.Added : EntityState.Modified;
-                }
-            }
-            await _context.SaveChangesAsync();
-            return patient;*/
-
-            // Attach the patient if it's not already being tracked
+            
             var existingPatient = await _context.Patients
                 .Include(p => p.Address)
                 .Include(p => p.HealthConditions)
